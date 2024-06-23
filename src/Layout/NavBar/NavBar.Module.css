@@ -1,0 +1,133 @@
+/* NavBar.Module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Varela&display=swap');
+
+img{
+    height: 50px;
+    width: 60px;
+}
+
+
+.navbar-control {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    right: 0;
+    display: flex;
+    background-color: #221f1f;
+    width: 100%;
+    height: 10%;
+    transition: top 0.3s;
+    z-index: 10000;
+  }
+
+.brand {
+    color: aliceblue;
+    margin-left: 100px;
+    font-weight: 800;
+    font-size: xx-large;
+    display: flex;
+    transition: all 0.3s ease ;
+}
+
+.brand:hover {
+    color: #ffffff; /* Change the color on hover */
+    
+}
+
+.nav-details{
+    margin-left: 20px;
+    gap: 5px;
+}
+
+.nav-link {
+    color: white ;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.nav-link:hover{
+    background-color: rgb(235, 235, 235);
+    color: #ff0000;
+    font-weight: bolder;
+    transform: scale(1.2);
+}
+
+
+.nav-link.active {
+    background-color: rgb(235, 235, 235);
+    font-weight: bolder;
+    color: #ff0000;
+    transform: scale(1.1);
+  }
+
+.navButtonsContainer {
+    margin-right: 83px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+}
+
+
+
+.cart-button {
+    position: absolute;
+    cursor: pointer;
+    top: 2.5vh;
+    right: 35vh;
+    
+}
+
+.cart-icon {
+    font-size: 40px;
+    color: white;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+
+.login-button {
+    position: absolute;
+    top: 1.5vh;
+    right: 17vh;
+    background-color: rgb(235, 235, 235);
+    color: #ff0000;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #ffffff; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+  }
+  
+  .login-button:hover {
+    border: 1px solid #ff0000; 
+    background-color: #ff0000; 
+    color: white; 
+    transform: scale(1.1);
+  }
+  
+
+.login-button .nav-icon {
+    font-size: 18px;
+}
+
+
+
+/* sticky , fixed , absolute(ancestor), relative(ownposition) , static(default) */
+
+

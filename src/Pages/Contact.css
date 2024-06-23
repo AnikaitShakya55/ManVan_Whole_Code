@@ -1,0 +1,60 @@
+.contact-page {
+  height: 60rem;
+}
+
+.contact-form-container {
+  height: 30rem;
+}
+
+.background-radial-gradient {
+  height: 40rem;
+  opacity: 0.94;
+  background-image: url('https://www.shutterstock.com/shutterstock/videos/1107144689/thumb/1.jpg?ip=x480');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-form-container {
+  background-color: rgba(99, 175, 33, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 3rem;
+}
+
+.my-custom-form {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  width: 40rem;
+}
+
+.my-custom-button {
+  background-color: rgb(61, 58, 64);
+  width: 1rem;
+}
+
+.my-custom-button:hover {
+  background-color: black;
+}
+
+.my-custom-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #b1b1b1;
+}
+
+.my-custom-input::placeholder {
+  color: #999;
+}
+
+.my-custom-input:focus {
+  outline: none;
+  border-color: #666;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,56 @@
+.CardContainer {
+  width: 20rem;
+  background-color: #f8f9fa; /* Light background color */
+  margin: 2rem auto; /* Adjust margin for consistent spacing, with auto for centering horizontally */
+  margin-top: 4rem; /* Distance from the top */
+  border: 1px solid #ced4da; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+  transition: all 0.3s ease;
+}
+
+.CardContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly elevated on hover */
+}
+
+.CardImg {
+  height: 300px;
+  object-fit: cover;
+}
+
+.CardBody {
+  padding: 1.5rem; /* Add padding inside the card body */
+}
+
+.CardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem; /* Add margin below the title */
+  color: #343a40; /* Dark text color */
+}
+
+.CardPrice {
+  font-size: 1.25rem;
+  color: #007bff; /* Primary color for price */
+  margin-bottom: 0.5rem; /* Add margin below the price */
+}
+
+.CardText {
+  font-size: 1rem;
+  color: #6c757d; /* Text color */
+  margin-bottom: 1rem; /* Add margin below the text */
+}
+
+.Button {
+  background-color: #dc3545; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  padding: 0.5rem 1rem; /* Padding for the button */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.Button:hover {
+  background-color: #c82333; /* Darker background color on hover */
+}

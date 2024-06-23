@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add padding for better spacing */
+  background-color: #f9f9f9; /* Add a light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a dark shadow */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  margin-top: 50px; 
+  margin-bottom: 50px;
+  margin-left: auto; 
+  margin-right: auto; 
+  max-height: fit-content;
+  max-width: 800px; /* Limit maximum width */
+}
+
+
+.projectGlimpseContainer {
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: white; /* Set background color to white */
+  border-radius: 20px; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  
+}
+
+.projectGlimpseScroll {
+  height: 23rem;
+  width: auto;
+  align-items: center;
+  padding: 40px; /* Add padding for better spacing */
+  background-color: #f9f9f9; /* Add a light background color */
+  box-shadow: none; /* Remove box shadow */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.projectGlimpseImage {
+  width: 300px;
+  height: 30rem;
+  margin-right: 10px;
+  border-radius : 10px;
+}
+
+.viewMoreButton {
+  background-color: #777786;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.viewMoreButton:hover {
+  background-color: #e2e5e8;
+}
+
+
+.projectGlimpseScroll {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.projectGlimpseImage {
+  display: inline-block;
+  width: 300px;
+  height: 30rem;
+  margin-right: 10px;
+  animation: slide 9s linear infinite; /* Adjust the duration as needed */
+}
+
+
+
+
+
+.homeSection {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.homeSectionAlt {
+  background-color: #1d1d1d;
+  padding: 20px;
+}
+
+.homeHeading {
+
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.homeSubheading {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.homeImage {
+  opacity: 0.99;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+
+
+.offerimage{
+  height: 44rem;
+  background-color: white;
+}
+
+
+.offercontainer {
+  margin-bottom: 4rem;
+  background-color: #373434;
+  padding: 20px;
+  border-radius: 10px;
+  height: 75rem;
+}
+
+.offerheading {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  background-color: #d8d8d8;
+
+ 
+
+}
+
+.offercontent {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #d8d8d8;
+}
+
+.offerimage {
+  transition: transform 0.3s ease-in-out;
+}
+
+.offerimage:hover {
+  transform: scale(0.8);
+  background-color: #202020;
+}
+
+@keyframes changeBackgroundColor {
+  100% { background-color: #cfcfcf; }
+  50% { background-color: #dfdfdf; }
+  0% { background-color: #f0f0f0d9; }  
+}
+
+body {
+  animation: changeBackgroundColor 6s infinite alternate;
+}
+
+/* Values section styling */
+.values-container {
+  position: relative; 
+  width: 130%;
+}
+
+/* Value card styling */
+.value-section {
+
+  background-color: #c96b78;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative; /* Ensure absolute positioning for the border animation */
+}
+
+/* Animated border */
+.value-section::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 3px solid transparent; /* Start with a transparent border */
+  border-radius: 15px;
+  animation: pulse-border 2s infinite alternate; /* Apply the pulse animation */
+}
+
+
+/* Hover effect for value cards */
+.value-section:hover {
+  transform: translateY(-5px);
+}
+
+/* Background animation styling */
+.background-animation {
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #400812, hsl(60, 4%, 64%));
+  opacity: 0.2;
+  z-index: -1; /* Ensure it stays behind value cards */
+}
+
+
+
